@@ -1,0 +1,115 @@
+@font-face {
+    font-family: "JosefinSans-Bold" ;
+    src: url(../../assets/static/JosefinSans-Bold.ttf);
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "JosefinSans-ExtraLight" ;
+    src: url(../../assets/static/JosefinSans-ExtraLight.ttf);
+    font-weight: normal;
+}
+@font-face {
+    font-family: "JosefinSans-Regular" ;
+    src: url(../../assets/static/JosefinSans-Regular.ttf);
+    font-weight: normal;
+}
+
+#Fashiondiv{
+    width: 60%;
+    height: 100%;
+    background-image: url(../../assets/background.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 60px 150px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    row-gap: 100px;
+    position: relative;
+}
+#text-div{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    line-height: 1.25;
+    row-gap: 20px;
+}
+h1{
+    letter-spacing: 15PX;
+    margin: 0;
+    font-family: "JosefinSans-Bold" ;
+    font-weight: 600;
+    font-size: 65px;
+}
+span{
+    color: hsl(0, 36%, 70%);
+    font-family: "JosefinSans-ExtraLight" ;
+}
+P{
+    color: hsl(0, 36%, 70%);
+    line-height: 1.5;
+    font-family: "JosefinSans-Regular" ;
+}
+#buttons-div{
+    width: 100%;
+    display: flex; 
+}
+#buttons-div >input{
+    background: none;
+    border-radius: 20px;
+    height: 45px;
+    width: 80%;
+    border: 1px solid hsl(0, 3%, 79%);
+    padding: 15px;
+    box-sizing: border-box;
+    z-index: 1;
+}
+::placeholder{
+    color:hsl(0, 36%, 70%) ;
+    opacity: 0.5;
+}
+#sendbttn{
+    background-color: hsl(0, 36%, 70%);
+    border: none;
+    height: 45px;
+    width: 20%;
+    border-radius: 20px;
+    position: relative;
+    left: -30px;
+    z-index: 2;
+}
+
+@media only screen and (max-width: 600px) {
+    #Fashiondiv{
+        width: 100%;
+        padding: 40px;
+        margin: 0;
+        row-gap: 5px;
+        background-image: url(../../assets/background.svg);
+    }
+    #text-div{
+        width: 100%;
+        text-align: center;
+        align-items: center;
+        position: relative;
+        top: 300px;
+    }
+    h1{
+        font-size: 20px;
+    }
+    p{
+        margin: 0;
+    }
+    #text-div{
+        width: 100%;
+    }
+    #buttons-div >input{
+        width: 100%;
+    }
+    #sendbttn{
+            width: 40%;
+    }
+
+}
